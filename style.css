@@ -2219,6 +2219,7 @@ a:visited, a:hover, a:active, a:focus {
 	padding: 0;
 	position: relative;
 	justify-content:center;
+	border-bottom: 1px solid #e2e2e2;
 }
 
 .sticky-header .header-content {
@@ -2913,14 +2914,7 @@ article.card-category {
 }
 
 .site-content {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	clear: both;
+	background-color:#f4f4f4;
 }
 
 .container {
@@ -2929,7 +2923,8 @@ article.card-category {
 }
 
 .frontpage-container {
-	background-color:#f4f4f4;
+	max-width: 1170px;
+    margin: 0 auto;
 }
 
 @media (max-width: 1199px) {
@@ -2990,10 +2985,6 @@ article.card-category {
 	text-align: center;
 	font-size:16px;
 	line-height: 50px; 
-}
-
-.frontpage-container {
-	width: 100%;
 }
 
 .frontpage-container .main-heading {
