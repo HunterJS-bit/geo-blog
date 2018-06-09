@@ -2928,7 +2928,9 @@ article.card-category {
 	margin: 0 auto;
 }
 
-
+.frontpage-container {
+	background-color:#f4f4f4;
+}
 
 @media (max-width: 1199px) {
 	.container {
