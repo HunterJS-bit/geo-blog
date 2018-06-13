@@ -96,7 +96,13 @@ function floral_setup() {
 
 
 add_action( 'after_setup_theme', 'floral_setup' );
-
+//* Remove URL field from comments
+function remove_url_comments($fields) {
+unset($fields['url']);
+unset($fields['email']);
+return $fields;
+}
+add_filter('comment_form_default_fields','remove_url_comments');
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

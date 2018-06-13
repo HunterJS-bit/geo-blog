@@ -1,31 +1,37 @@
 <?php get_header(); ?>
 
 
-<div class="frontpage-container">
-	
-<h3 class="main-heading">
-	Najnovije
-	</h3>
+
 
 	<?php 
 $args = array(
-	'posts_per_page' => 5,
-	'offset' => 1
+	'posts_per_page' => 6,
+	'post_status' => 'publish',
+	'orderby'          => 'date',
+	'post_type'        => 'post'
 );
 $query = new WP_query ( $args );
 if ( $query->have_posts() ) { ?>
-
-	<section class="new-posts full-width">
-		 
+<section class="new-posts full-width">
 		<?php 
 			$c = 0;	 
 			while ( $query->have_posts() ) : 
-							 $c++;
-							
-							 $query->the_post();
-							  $class = ($c == 1) ? 'page-post featured' : 'page-post';
-				?>
-              <article class="blog-container">
+				$query->the_post();
+				if ( $c == 0 ) {
+					?>	
+				<section id="banner">
+				<h2><?php the_title();?></h2>
+				<p>Magna feugiat lorem dolor egestas</p>
+				<a href="#" class="button big special">Procitaj Tekst</a></li>
+				
+			</section>
+					<?php
+				} else {
+					?>
+					<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</h3>
+<div class="frontpage-container">
+	<!-- PREVIOUS IMPLEMENTATION -->
+			<!-- 	<article class="blog-container">
 				  <a href="<?php the_permalink(); ?>">
 					  <?php
 							 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'post-thumbnail');
@@ -73,23 +79,30 @@ if ( $query->have_posts() ) { ?>
 					  </div> 	
 				</a>
 
-			</article>
-		
-  
-		
-						
-  
-  		<?php endwhile; ?>
-  
+			</article> -->
+			<?php 
+				}
+				$c++;
+		?>
+		<?php endwhile; ?>
   		<?php wp_reset_postdata(); ?>
 
- 
-  	</section>
+
+</section>
+ <?php } 	?>
+
+
+<!-- Popular Posts -->
+
+
+
+
+
+
+
   <h3 class="main-heading">
 	Popularno
 	</h3>
-<?php } 
-	?>
 	
 		<?php 
 $args = array(
