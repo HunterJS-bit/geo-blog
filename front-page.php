@@ -22,64 +22,18 @@ if ( $query->have_posts() ) { ?>
 				<section id="banner">
 				<h2><?php the_title();?></h2>
 				<p>Magna feugiat lorem dolor egestas</p>
-				<a href="#" class="button big special">Procitaj Tekst</a></li>
+				<a href="#" class="button big special">Procitaj Tekstss</a></li>
 				
 			</section>
 					<?php
 				} else {
 					?>
-					<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</h3>
+		
 <div class="frontpage-container">
 	<!-- PREVIOUS IMPLEMENTATION -->
-			<!-- 	<article class="blog-container">
-				  <a href="<?php the_permalink(); ?>">
-					  <?php
-							 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'post-thumbnail');
-					  ?>
-					  <div class="blog-header" >
-						  <div class = "blog-cover" style="background-image: url(<?php echo $featured_img_url; ?>)">
-							 
-						  </div>
-					  </div>
-					  <div class="blog-body">
-						  <h3>
-							  <a href="<?php the_permalink(); ?>"> <?php the_title();?></a>		  
-						  </h3>
-						  <div class ="blog-summary">
-					
-								 <?php the_excerpt(); ?>
-							
-						  </div>
-						  <div class ="blog-tags">
-							
-							  <ul>
-								<?php
-							 			$categories = get_the_category();
-										$separator = ' ';
-										$output = '';
-										if ( ! empty( $categories ) ) {
-											foreach( $categories as $category ) {
-												$output .= '<li><a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( 													sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a></li>' . $separator;
-														}
-														echo trim( $output, $separator );
-													}
-								  ?>
-							  </ul>
-						  </div>
-						  <div class="blog-footer">
-							  <ul>
-								  <li class="publish-date"><?php echo 'Pre ' .human_time_diff( get_the_time('U'), current_time('timestamp') ) ; ?></li>
-							 	<li class="comments">
-									<a href="<?php comments_link(); ?>">
-										Ostavite komentar <i class="fa fa-comment-o" aria-hidden="true"></i>
-									</a>
-								  </li>
-							  </ul>
-						  </div>
-					  </div> 	
-				</a>
-
-			</article> -->
+				<article class="blog-container">
+				
+			</article>
 			<?php 
 				}
 				$c++;
@@ -117,20 +71,35 @@ if ( $query->have_posts() ) { ?>
 							
 							 $query->the_post();
 							 ?>
-		<article class="popular-container">
+		<article class="post">
 			<?php  $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'post-thumbnail');
 				?>
-			<a href="" class="card-image" style="background-image: url(<?php echo $featured_img_url; ?>)">
-			</a>
-			<div class="card-content">
-				<div class = "card-header">
-					<h4>
+			<!-- <a href="" class="" style="background-image: url(<?php echo $featured_img_url; ?>)">
+			</a> -->
+			<?php
+			 echo $featured_img_url; 
+			?>
+			<div class="post-image">
+				<div class="image-container" style="background-image: url('https://picsum.photos/200/300')">
+				</div>
+			</div>
+			<div class="post-container">
+				<div class="post-author">
+					Nikola trific
+				</div>
+				<div class = "post-content">
+					<div class="post-header">
+						<time class="post__time">Jan 22 2017</time>
+						<h3 class="post_title"><?php the_title(); ?></h3>
+						<p class="post_text"> <?php the_excerpt(); ?> </p>
+					</div>
+					<!-- <h4>
 						<?php the_title(); ?>
 					</h4>
 					<p>
 						<?php the_excerpt(); ?>
 					</p>
-					<a href="<?php the_permalink(); ?>"  class="read-more"> Procitajte Vise </a>
+					<a href="<?php the_permalink(); ?>"  class="read-more"> Procitajte Vise </a> -->
 				</div>
 
 				

@@ -2264,6 +2264,7 @@ a:visited, a:hover, a:active, a:focus {
 
 .site-header {
 	border-bottom: 1px solid #dedede;
+	background: white;
 }
 
 .blog .site-header,
@@ -2911,10 +2912,12 @@ article.card-category {
 .site {
 	overflow: hidden;
 	position: relative;
+	background-color:#f4f4f4;
 }
 
 .site-content {
-	background-color:#f4f4f4;
+	 max-width: 1200px; 
+     margin: 0 auto; 
 }
 
 .container {
@@ -2999,7 +3002,9 @@ article.card-category {
 }
 
 .blog-container {
-	background: #fff;
+	    margin: 0 auto;
+	    width: 100%;
+/*	background: #fff;
     border-radius: 5px;
         -webkit-box-shadow: 5px 12px 71px -20px rgba(138, 138, 138, 0.75);
     -moz-box-shadow: 5px 12px 71px -20px rgba(0,0,0,0.75);
@@ -3007,7 +3012,7 @@ article.card-category {
     font-family: "adelle-sans", sans-serif;
     font-weight: 100;
     margin: 20px auto;
-    width: 100%;
+    width: 100%;*/
 }
 
 
@@ -3143,20 +3148,114 @@ li.publish-date {
 @media (max-width: 1340px){
 	.container {
 		align-items: center;
-/* 		flex-direction: column; */
 		justify-content: space-between; 
 	}
 }
 
-.popular-posts .popular-container {
+section.popular-posts.full-width {
+    padding: 0px 20px;
+}
+
+.post {
+	display: flex;
+    min-height: 20em;
+    width: 100%;
+    background: white;
+    margin-bottom: 5em;
+}
+.post > *:first-child {
+    flex-basis: 50%;
+    max-width: 50%;
+    position: relative;
+    height: auto;
+    background-color: #000;
+}
+.post > *:last-child {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.post-image {
+	flex-basis: 50%;
+    max-width: 50%;
+    height: auto;
+}
+
+.image-container {
+    height: 100%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    -webkit-animation: fade-in 0.8s ease-in-out both 1s;
+    animation: fade-in 0.8s ease-in-out both 1s;
+}
+
+.post-container {
+	display: flex;
+    flex-direction: column;
+    padding: 1em;
+    overflow-y: auto;
+}
+
+.post-author {
+	position: relative;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    overflow: hidden;
+}
+
+.post-author:after {
+	content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 3em;
+    background-color: #000;
+    -webkit-animation: slide-in 1s ease-in both 0.5s;
+    animation: slide-in 1s ease-in both 0.5s;
+}
+
+.post-content {
+	padding: 0px 2em;
+}
+
+.post__time {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.post_title {
+	overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-size: 1.4em;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.post_text {
+	font-weight: 300;
+	margin: 0;
+    color: #a9b1b3;
+}
+/*.popular-posts .popular-container {
 	    display: flex;
     position: relative;
     color: #333;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	margin: 20px 0px;
-}
+}*/
 
-.popular-container .card-image {
+/*.popular-container .card-image {
 	 display: block;
     -webkit-flex: 2;
     -ms-flex: 2;
@@ -3204,7 +3303,7 @@ a.read-more {
     width: 100%;
     padding: 5px 7px;
 }
-
+*/
 @media (max-width: 1340px)
 {
 
