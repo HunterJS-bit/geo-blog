@@ -2587,23 +2587,12 @@ color:#fff;
 }
 
 
-.footer-links {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-.footer-links a {
-	color:#fff;
-	font-size:0.9em;
-}
 .disclamer {
 	position: relative;
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #272726;
+    background-color: #171e25;
 }
 
 .disclamer p {
@@ -2615,43 +2604,6 @@ color:#fff;
     text-align: center;
 }
 
-.footer-links ul {
-	flex-basis: 13em;
-    flex-shrink: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    text-align: center;
-}
-.footer-links ul li {
-    line-height: 1.5em;
-    list-style: none;
-    text-align: center;
-}
-
-.footer-links ul li h3 {
-	    color:#fff;
-    font-size: 1.3em;
-    margin-bottom: 0.4em;
-	letter-spacing: 2px;
-    font-weight: 400;
-}
-
-.footer-links ul li h3:after{
-	display: block;
-	content: "";
-	width: 30%;
-	height: 4px;
-	background-color: rgba(128, 128,128,0.15);
-	margin: 0 auto;
-	margin-top: 5px;
-}
-
-.list-inline li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 10px;
-}
 
 /*------- Categories page -----------*/
 .category-name{
@@ -3247,112 +3199,42 @@ section.popular-posts.full-width {
 	margin: 0;
     color: #a9b1b3;
 }
-/*.popular-posts .popular-container {
-	    display: flex;
+
+.contact-section {
+	background-color: #1E2832;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 8em 0 6em 0;
     position: relative;
-    color: #333;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	margin: 20px 0px;
-}*/
-
-/*.popular-container .card-image {
-	 display: block;
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    background-position: center;
-    background-size: cover;
-    background-color: #ccc;
 }
 
-.popular-container .card-content {
-	padding:10px 20px;
-    margin: 0;
-	    display: block;
-    -webkit-flex: 1 0 40%;
-    -ms-flex: 1 0 40%;
-    flex: 1 0 40%;
-    background: #fff;
-}
-
-.popular-container .card-content .card-header h4 {
-	font-size:15px;
-	font-weight: 600;
-    letter-spacing: 1px;
-    color: #4e4e4e;
-    text-transform: uppercase;
-	margin:0;
-}
-
-.popular-container .card-content .card-header p {
-	font-family: open sans;
-	font-size:13px;
-    font-weight: 200;
-    color: #747474;
-}
-
-a.read-more {
-    display: block;
+.contact-section .contact-header {
+	max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    background-color: #f06560;
     color: #fff;
-    font-weight: bold;
-    letter-spacing: 2px;
-    width: 100%;
-    padding: 5px 7px;
-}
-*/
-@media (max-width: 1340px)
-{
-
 }
 
-
-
-@media (max-width: 1340px){
-
+.contact-header h3 {
+	letter-spacing: 3px;
+    font-size: 2.5em;
+    font-weight: 900;
 }
 
-div#mc_embed_signup {
-  	 width:100%;
-    padding: 25px 20px;
-	background-color:#3498db;
+.contact-header h3 + p {
+    font-size: 1.25em;
+    margin-top: -1em;
+    line-height: 1.85em;
 }
 
-div#mc_embed_signup_scroll {
-    text-align: center;
+.contactform-7 {
+	text-align: center;
 }
 
-.subscribe-container {
-    display: flex;
-    justify-content: center;
+.contactform-7 input, .contactform-7 textarea {
+	    background-color: rgba(255, 255, 255, 0.05);
+    border-color: transparent;
 }
-
-#newsletter-label {
-	font-size: 1.2em;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-input#mce-EMAIL {
-    display: block;
-    width: 50%;
-    text-align: center;
-}
-
-input#mc-embedded-subscribe{
-	border: 1px solid #1a79b9;
-    background: #1a79b9;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-    letter-spacing: 1px;
-    font-weight: 700;
-}
-
-
 /*--------------------------------------------------------------
 
 /*--------------------------------------------------------------
@@ -4374,84 +4256,6 @@ ol.children {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
-.contact-section {
-    position: relative;
-    margin: 0 auto;
-    margin-top: -60px;
-    background: #fff;
-	width:80%;
-	border-top-left-radius: 3px;
-    border-top-right-radius:3px;
-}
-
-.fancy {
-  line-height: 0;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding-top: 20px;
-  font-weight: 400;
-  padding: 0px 10px;
-  font-size: 19px;
-  padding-top:8px;
-}
-.fancy span {
-  display: inline-block;
-  position: relative;  
-}
-.fancy span:before,
-.fancy span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid #1f1f1f;
-  border-top: 1px solid #1f1f1f;
-  top: 0;
-  width: 15px;
-}
-.fancy span:before {
-  right: 100%;
-  margin-right: 4px;
-}
-.fancy span:after {
-  left: 100%;
-  margin-left: 4px;
-}
-
-div#wpcf7-f107-o1 input, div#wpcf7-f107-o1 textarea  {
- width: 100%;
-}
-
-
-@media (max-width: 685px) {
-
-}
-
-p.contact-info {
-    text-align: center;
-    padding-top: 33px;
-}
-
-
-@media (max-width: 500px) {
-
-}
-
-
-input.wpcf7-form-control.wpcf7-submit {
-	display:inline-block;
-    max-width: 150px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-form.wpcf7-form p {
-	font-weight: 700;
-}
-
 
 /**----------------------------------------------------------
  * # About

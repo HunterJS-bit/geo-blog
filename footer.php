@@ -14,23 +14,7 @@
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-container">
-		
-			<div class="footer-links">
-				<ul>
-					<li><h3>Info</h3></li>
-					<li><a href="/o-nama">O NAMA</a></li>
-					<li><a href="/kontakt">KONTAKT</a></li>
-				</ul>
-				<ul>
-					<li><h3>Pratite nas </h3></li>
-					<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline"> 
-							<li> <a href="#"><i class="fa fa-facebook"></i></a></li> 
-							<li> <a href="#"><i class="fa fa-linkedin"></i></a></li> 
-							<li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li> <a href="#"><i class="fa fa-youtube"></i></a></li>
-					</ul>
-				</ul>
-			</div>
+	
 		</div>
 		<div class="disclamer">
 				<p>Copyright © <?php echo date('Y'); ?> &nbsp;&nbsp; | &nbsp;&nbsp; Designed by Codeony, LLC</p>

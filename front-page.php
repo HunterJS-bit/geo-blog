@@ -111,17 +111,17 @@ if ( $query->have_posts() ) { ?>
 							} ?>
 		</section>
 </div>
-	<div id="mc_embed_signup">
-<form action="https://geostrateg.us17.list-manage.com/subscribe/post?u=78781b299582580f3da5858eb&amp;id=bd3b36e8e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label id="newsletter-label" for="mce-EMAIL">Prijavite se na naš newsletter </label>
-    <div class="subscribe-container">
-		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Vasa Email adresa" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_78781b299582580f3da5858eb_bd3b36e8e3" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="POSALJI" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
+<section id="mc_embed_signup">
+
+</section>
+
+<section id="four" class="contact-section">
+	<header class="contact-header">
+		<h3>Kontaktirajte nas</h3>
+		<p>Donec faucibus, neque ac porttitor porta, sem augue viverra lorem, at tempor eros libero nec augue. Duis eget eleifend.</p>
+	</header>
+	<div class="contactform-7">
+		<?php echo do_shortcode( '[contact-form-7 id="1459" title="Contact form 1"]' ); ?>
 	</div>
-</form>
-</div>
+</section>
 <?php get_footer(); ?>
